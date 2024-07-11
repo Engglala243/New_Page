@@ -1,0 +1,82 @@
+
+.textMessage-container{
+  font-family: 'Verdana', sans-serif;
+  margin: 20px auto;
+  padding: 30px;
+  max-width: 900px;
+  background: linear-gradient(135deg, #98a1ad, #c3cfe2);
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+.container{
+  margin-top: 20px auto;
+}
+
+.contact-header{
+  background-color: #ff6f61;
+  padding: 30px;
+  color: white;
+  text-align: center;
+  border-radius: 15px 15px 0 0;
+}
+
+.textarea-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.textarea-container .form-control{
+  width: 100%;
+  max-width: 800px;
+  height: 200px;
+  padding: 15px;
+  border: 2px dashed red;
+  border-radius: 15px;
+  resize: none;
+  font-size: 1.1rem;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-container .btn{
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-container .btn:hover{
+  background-color: #0056b3;
+}
+    
+.container{
+  text-align: center;
+  margin-top: 20px;
+}
+
+.container p{
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.container h3{
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.container p{
+  font-family: 'Courier New', Courier, monospace;
+  white-space: pre-wrap;
+}

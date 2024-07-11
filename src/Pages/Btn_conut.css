@@ -1,0 +1,83 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+.btn_count-container{
+    padding: 20px;
+    background-color: #eae0a1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+}
+  
+.btn_count-header, .random_number-header{
+    margin-bottom: 20px;
+    background-color: #673ab7;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    border-radius: 15px 15px 0 0;
+}
+  
+.btn_count-header h1, .random_number-header h1{
+    font-size: 2rem;
+    color: #ffffff;
+}
+  
+.btn_count-form-section, .random-number-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+  
+.btn_count-form{
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.btn_count-form label, .random-number-section label{
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+  
+.btn_count-form button, .random-number-section button{
+    font-size: 1rem;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+  
+.btn_count-form button:hover, .random-number-section button:hover{
+    background-color: #0056b3;
+}
+  
+.random_number-results{
+    margin-top: 20px;
+    background-color: #d21f1f;
+    padding: 20px;
+    border-radius: 15px 15px 10px 10px;
+}
+  
+.random_number-results p{
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+  
+.true-color{
+    color: green;
+}
+  
+.false-color{
+    color: red;
+}  
