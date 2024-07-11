@@ -6,7 +6,7 @@ function About() {
     <Navigation/>
       <div className="about-container">
         <header className="about-header">
-          <h1>About Us</h1>
+          <h1>Information Us</h1>
         </header>
         <section className="about-content">
           <h2>Our Story</h2>
