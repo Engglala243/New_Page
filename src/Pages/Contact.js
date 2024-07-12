@@ -1,6 +1,7 @@
 import './Contact.css';
 import Navigation from '../Components/Navigation';
 function Contact() {
+  document.title = 'React page - Contact';
     return (
       <>
       <Navigation/>

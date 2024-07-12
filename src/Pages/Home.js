@@ -2,6 +2,7 @@ import './Home.css';
 import Navigation from '../Components/Navigation';
 // import Header from '../Components/Header';
 function Home() {
+    document.title = 'React page - Home';
     return (
     <>
       <Navigation/>

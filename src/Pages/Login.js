@@ -1,6 +1,7 @@
 import './Log-in.css';
 import Navigation from '../Components/Navigation';
 function Login() {
+  document.title = 'React page - Login';
   return (
     <>
     <Navigation/>

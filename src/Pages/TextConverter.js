@@ -5,25 +5,28 @@ import './TextConverter.css';
 import Alert from '../Components/Alert';
 
 function TextConverter() {
+  document.title = 'React page - Text Convert';
   const [alert, setAlert] = useState(null);
   const showAlert = (message, type) => {
-    setAlert({ 
-      msg : message, 
-      type : type })
-      setTimeout(() => {
-        setAlert(null);
-      },1500);
+    setAlert({
+      msg: message,
+      type: type
+    });
+    setTimeout(() => {
+      setAlert(null);
+    }, 1500);
   }
 
   const handleUpClick = () => {
     let newText = text.toUpperCase();
     setText(newText);
-    showAlert("Convert to uppercase","success")
+    showAlert(<b>"Convert to uppercase","Success"</b>);
   }
 
   const handleLoClick = () => {
     let newText = text.toLowerCase();
     setText(newText);
+    showAlert(<b>"Convert to lowercase","Success"</b>);
   }
 
   // const handleClearClick = () => {
@@ -38,11 +41,13 @@ function TextConverter() {
     const colors = ['red', 'blue', 'green', 'purple', 'orange'];
     const randomColor = colors[Math.floor(Math.random() * colors.length)];
     setColor(randomColor);
+    showAlert(<b>"Random color","Success"</b>);
   }
 
   const handleSpeCharAnalyze = () => {
     const specialCharacters = text.match(/[!@#$%^&*(),.?":{}|<>]/g) || [];
     setSpecialCharacters(specialCharacters);
+    showAlert(<b>"Analyze of special characters","Success"</b>);
   }
 
 
@@ -55,6 +60,7 @@ function TextConverter() {
     setText(newText);
     const specialCharacters = [];
     setSpecialCharacters(specialCharacters);
+    showAlert(<b>"Clear all","Success"</b>);
     // handleClearClick();
     //handleSpeCharAnalyze();
   }
@@ -66,7 +72,7 @@ function TextConverter() {
   return (
     <>
       <Navigation/>
-      <Alert alert="This is alert"/>
+      <Alert alert={alert}/>
       <div className="textMessage-container">
         <header className="contact-header">
             <h1>Enter the text :-</h1>

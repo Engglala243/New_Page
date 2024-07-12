@@ -7,10 +7,12 @@ function Btn_conut(){
   let [number1, setNumber1] = useState(null);
   let [number2, setNumber2] = useState(null);
   let [isEqual, setIsEqual] = useState(null);
+  let [color1, setColor1] = useState('black');
+  let [color2, setColor2] = useState('black');
 
   const handleClick = () =>{
     setCount(count + 1);
-  };
+  }
 
   const generateRandomNumbers = () =>{
     let rand1 = Math.floor(Math.random() * 100) + 1;
@@ -18,7 +20,14 @@ function Btn_conut(){
     setNumber1(rand1);
     setNumber2(rand2);
     setIsEqual(rand1 === rand2);
-  };
+    // ==============================
+    let colors = ['red', 'blue', 'green', 'purple', 'orange'];
+    let randomColor1 = colors[Math.floor(Math.random() * colors.length)];
+    let randomColor2 = colors[Math.floor(Math.random() * colors.length)];
+    setColor1(randomColor1);
+    setColor2(randomColor2);
+  }
+  document.title = 'React page - Btn Count';
   return(
     <>
       <Navigation />
@@ -42,9 +51,9 @@ function Btn_conut(){
           <button type="button" onClick={generateRandomNumbers}>Click</button>
           {number1 !== null && number2 !== null && (
             <div className="random_number-results">
-              <p>Number 1: {number1}</p>
-              <p>Number 2: {number2}</p>
-              <p style={{ color: isEqual ? 'green' : 'blue' }}>{isEqual ? 'true' : 'false'}</p>
+              <p style={{ color: color1 }}>Number 1: {number1}</p>
+              <p style={{ color: color2 }}>Number 2: {number2}</p>
+              <p style={{ color: isEqual ? 'green' : 'blue' }}>{isEqual ? 'True' : 'False'}</p>
             </div>
           )}
         </section>

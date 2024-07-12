@@ -1,6 +1,7 @@
 import './About.css';
 import Navigation from '../Components/Navigation';
 function About() {
+  document.title = 'React page - About';
     return (
     <>
     <Navigation/>

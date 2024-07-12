@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+//import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navigation.css';
 
 function Navigation(){
   // const [darkMode, setDarkMode] = useState(false);
-  
+  // document.title = 'React page';
   return (
     // <nav classNameName="navigation">
     //   <ul>

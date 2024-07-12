@@ -4,6 +4,7 @@ import Navigation from '../Components/Navigation';
 import './Logout.css';
 
 function Logout(){
+  document.title = 'React page - Logout';
   return (
     <>
     <Navigation/>
