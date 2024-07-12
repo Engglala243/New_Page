@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Navigation from '../Components/Navigation';
 import './Btn_conut.css';
 
-function Btn_conut(){
+function BtnConut(){
   let [count, setCount] = useState(0);
   let [number1, setNumber1] = useState(null);
   let [number2, setNumber2] = useState(null);
@@ -61,4 +61,4 @@ function Btn_conut(){
     </>
   );
 }
-export default Btn_conut;
+export default BtnConut;
