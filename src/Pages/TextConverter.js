@@ -83,20 +83,20 @@ function TextConverter() {
           </div>
         </div>
         <div className="button-container">
-          <button className="btn btn-primary  mx-1" onClick={handleUpClick}>Convert to uppercase</button>
-          <button className="btn btn-primary  mx-1" onClick={handleLoClick}>Convert to lowercase</button>
-          <button className="btn btn-primary  mx-1" onClick={handleClearAndSpecCharAnalyze}>Clear text</button>
-          <button className="btn btn-primary  mx-1" onClick={handleColorChange}>Change text Color</button>
-          <button className="btn btn-primary mx-1" onClick={handleSpeCharAnalyze}>Analyze Special Characters</button>
+          <button className="btn btn-primary mx-1 my-1"  disabled={text.length===0} onClick={handleUpClick}>Convert to uppercase</button>
+          <button className="btn btn-primary mx-1 my-1"  disabled={text.length===0} onClick={handleLoClick}>Convert to lowercase</button>
+          <button className="btn btn-primary mx-1 my-1"  disabled={text.length===0} onClick={handleClearAndSpecCharAnalyze}>Clear text</button>
+          <button className="btn btn-primary mx-1 my-1"  disabled={text.length===0} onClick={handleColorChange}>Change text Color</button>
+          <button className="btn btn-primary mx-1 my-1"  disabled={text.length===0} onClick={handleSpeCharAnalyze}>Analyze Special Characters</button>
           </div>
       </div>
       <div className="container">  
-        <p>{text.split(" ").length} Word and {text.length} characters</p>
-        <p>{0.004 * text.split(" ").length} Time to read words in minutes</p>
+        <p>{text.split(/\s+/).filter((elemnet)=>{return elemnet.length !== 0}).length} Word and {text.length} characters</p>
+        <p>{0.004 * text.split(" ").filter((elemnet)=>{return elemnet.length !== 0}).length} Time to read words in minutes</p>
         <h3>Preview</h3>
-        <p>{text}</p>
+        <p>{text.length>0?text:"Nothing to preview"}</p>
         <h3>Special Characters in Text</h3>
-        <p>{specialCharacters.join(' ')}</p>
+        <p>{specialCharacters.join(' ').length>0?specialCharacters:"Nothing to special characters"}</p>
       </div>
     </>
   );

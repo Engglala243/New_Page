@@ -44,7 +44,7 @@ function Navigation(){
               <Link className="nav-link" to="/logout">Logout</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/btn_count">Btn_count</Link>
+              <Link className="nav-link" to="/BtnCount">Btn_count</Link>
             </li>
           </ul>
           {/* <form className="d-flex" role="search">

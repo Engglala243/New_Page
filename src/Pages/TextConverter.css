@@ -80,3 +80,29 @@
   font-family: 'Courier New', Courier, monospace;
   white-space: pre-wrap;
 }
+/* ============================================================= */
+/* src/Pages/TextConverter.css */
+.textMessage-container {
+  padding: 20px;
+}
+
+.contact-header h1 {
+  text-align: center;
+}
+
+.textarea-container {
+  margin-top: 20px;
+}
+
+.button-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn {
+  margin: 5px;
+}
+
+.container {
+  margin-top: 20px;
+}
