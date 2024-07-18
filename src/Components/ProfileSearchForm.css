@@ -1,0 +1,50 @@
+.profile-search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+.profile-search-form label {
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+
+.profile-search-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.profile-search-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.profile-search-form button:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .profile-search-form {
+    width: 90%;
+  }
+
+  .profile-search-form input {
+    font-size: 0.9em;
+  }
+
+  .profile-search-form button {
+    font-size: 0.9em;
+  }
+}

@@ -12,6 +12,7 @@ import TextConverter from "../Pages/TextConverter";
 import Login from "../Pages/Login";
 import Logout from "../Pages/Logout";
 import BtnConut from "../Pages/BtnCount";
+import Github from "../Pages/Github";
 function AppRoute(props) {
     return (
       <Router {...props}>
@@ -23,6 +24,7 @@ function AppRoute(props) {
           <Route path="Login" element={<Login />} />
           <Route path="Logout" element={<Logout />} />
           <Route path="BtnCount" element={<BtnConut />} />
+          <Route path="Github" element={<Github/>} />
         </Routes>
       </Router>
     );

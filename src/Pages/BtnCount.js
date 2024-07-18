@@ -53,7 +53,7 @@ function BtnConut(){
             <div className="random_number-results">
               <p style={{ color: color1 }}>Number 1: {number1}</p>
               <p style={{ color: color2 }}>Number 2: {number2}</p>
-              <p style={{ color: isEqual ? 'green' : 'blue' }}>{isEqual ? 'True' : 'False'}</p>
+              <p style={{ color: isEqual ? 'red' : 'blue' }}>{isEqual ? 'True' : 'False'}</p>
             </div>
           )}
         </section>
